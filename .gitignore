@@ -1,0 +1,7 @@
+
+*.json
+*.pyc
+
+__blobstorage__
+__pycache__
+__queuestorage__
