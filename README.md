@@ -22,4 +22,9 @@ The solution for the problem is simple as this diagram:
 
 ## System
 
-To be done.
+To be completed
+
+## Diagram
+
+![System diagram](./Pictures/pic2.png "System diagram")
+
