@@ -17,7 +17,7 @@ The solution for the problem is simple as this diagram:
 * the sensor monitors the quality of the air
 * if CO2 is higher than 1000 ppm, a notification is sent to the Smart Watch
 
-![From air quality sensor to smart watch](./Pictures/pic1 "Solution")
+![From air quality sensor to smart watch](./Pictures/pic1.png "Solution")
 
 
 ## System
