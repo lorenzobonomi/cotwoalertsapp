@@ -17,7 +17,7 @@ The solution for the problem is simple as this diagram:
 * the sensor monitors the quality of the air
 * if CO2 is higher than 1000 ppm, a notification is sent to the Smart Watch
 
-![From air quality sensor to smart watch](./Pictures/pic1.png "Solution")
+<img src = './Pictures/pic1.jpeg' alt = 'From air quality sensor to smart watch' title = 'Solution.' width = '50%'>
 
 
 ## System
@@ -26,7 +26,7 @@ The solution for the problem is simple as this diagram:
 
 Below the system diagram developed and running on Azure.
 
-![System diagram](./Pictures/pic2.png "System diagram")
+<img src='./Pictures/pic2.jpeg' alt='System diagram' title='System diagram.' width='50%'>
 
 ## Description
 
@@ -40,16 +40,15 @@ Below the system diagram developed and running on Azure.
     * saves it an Azure Storage account for future analysis
     * checks if the CO2 measure is higher than 1000 ppm. 
 
-![Azure Stream Analytics](./Pictures/pic3.png "Azure Stream Analytics job")
+
+<img src='./Pictures/pic3.jpeg' alt='Azure Stream Analytics' title='Azure Stream Analytics.' width='50%'>
 
 5. If this is the case the data is sent to another event hub.
 
 6. Once the data is sent to the event hub, an Azure logic app triggers a message on Slack.
 
-![Azure Logic App](./Pictures/pic4.png "Azure Logic App")
+<img src='./Pictures/pic4.jpeg' alt='Azure Logic App' title='Azure Logic App.' width='50%'>
 
 7. The message on slack:
 
-![Slack smart watch](./Pictures/pic5.jpeg "Slack smart watch.")
-
-<img src="./Pictures/pic5.jpeg" alt="Slack smart watch" title="Slack smart watch." width="50%">
+<img src='./Pictures/pic5.jpeg' alt='Slack smart watch' title='Slack smart watch.' width='50%'>
