@@ -26,5 +26,24 @@ To be completed
 
 ## Diagram
 
+Below the system diagram developed and running on Azure.
+
 ![System diagram](./Pictures/pic2.png "System diagram")
 
+1. The ViewPlus device is connected to the wifi network and the data is accessible with an API. The [AirthingsAPI](./airthingsAPI.py) script call the API and gets a snapshot of seven measures (CO2, humidity, PM1, PM25, Pressure, Radon, VOC) and the timestamp.
+
+2. This script is executed every 40 minutes with an [Azure Function](./function_app.py) app 
+
+3. The [AirthingsAPI](./airthingsAPI.py) script, after querying the AirThings API, sends the data as an event to an Azure Event Hub.
+
+4. An Azure Stream Analytics job, processes the data and:
+    * saves it an Azure Storage account for future analysis
+    * checks if the CO2 measure is higher than 1000 ppm. 
+
+![Azure Stream Analytics](./Pictures/pic3.png "Azure Stream Analytics job")
+
+5. If this is the case the data is sent to another event hub.
+
+6. Once the data is sent to the event hub, an Azure logic app triggers a message on Slack.
+
+![Azure Logic App](./Pictures/pic4.png "Azure Logic App")
