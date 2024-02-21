@@ -22,13 +22,13 @@ The solution for the problem is simple as this diagram:
 
 ## System
 
-To be completed
-
 ## Diagram
 
 Below the system diagram developed and running on Azure.
 
 ![System diagram](./Pictures/pic2.png "System diagram")
+
+## Description
 
 1. The ViewPlus device is connected to the wifi network and the data is accessible with an API. The [AirthingsAPI](./airthingsAPI.py) script call the API and gets a snapshot of seven measures (CO2, humidity, PM1, PM25, Pressure, Radon, VOC) and the timestamp.
 
@@ -47,3 +47,7 @@ Below the system diagram developed and running on Azure.
 6. Once the data is sent to the event hub, an Azure logic app triggers a message on Slack.
 
 ![Azure Logic App](./Pictures/pic4.png "Azure Logic App")
+
+7. The message on slack:
+
+![Slack smart watch](./Pictures/pic5.jpeg "Slack smart watch.")
