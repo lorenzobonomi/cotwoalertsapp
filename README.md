@@ -51,3 +51,5 @@ Below the system diagram developed and running on Azure.
 7. The message on slack:
 
 ![Slack smart watch](./Pictures/pic5.jpeg "Slack smart watch.")
+
+<img src="./Pictures/pic5.jpeg" alt="Slack smart watch" title="Slack smart watch." width="50%">
